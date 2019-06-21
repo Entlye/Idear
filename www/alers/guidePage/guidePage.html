@@ -2,7 +2,7 @@
 
 <ion-view id = "guidePage" view-title = "引导页" cache-view = "false">
     
-    <ion-slide-box id = "guideSlide" on-slide-changed="slideHasChanged($index)">
+    <!-- <ion-slide-box id = "guideSlide" on-slide-changed="slideHasChanged($index)">
       <ion-slide>
         <div class = "item-logo" style="background-image: url({{data[0].imgUrl}}?a={{param}})">
             <a href="#">Mall</a>
@@ -26,6 +26,48 @@
       <ion-slide>
         <div class = "item-logo" style="background-image: url({{data[2].imgUrl}}?a={{param}})">
             <a href="#">Mall</a>
+            <div class="animate guide-show">
+                <button id = "close" ng-click = "goHome()">立即体验</button>
+            </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box> -->
+
+    <ion-slide-box id = "guideSlide" on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <div class = "item-logo" style="background-image: url(img/guidePage/idears.png)">
+            <!-- <a href="#">Mall</a> -->
+            <div>
+              <img class="guideanimate1" ng-src="img/guidePage/idear.png" alt="" style="position: absolute;left: 50%;top: 24%;margin-left: -100px;" >
+              <img ng-src="img/guidePage/money1.png" alt="" style="position: absolute;left: 54%;top: 45%;margin-left: -50px;">
+            </div>
+            <div id = "tips-0" class="animate guide-show">
+                <h2 class="animated bounceInDown" style="font-family: 楷体">如果你有好的点子</h2>
+                <li class="animated bounceInLeft">这里是你创作的天堂</li>
+                <li class="animated bounceInRight">快来加入我们吧！！！</li>
+            </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class = "item-logo" style="background-image: url(img/guidePage/targets.png)">
+            <!-- <a href="#">Mall</a> -->
+            <div>
+              <img class="guideanimate2"  ng-src="img/guidePage/target.png" style="position: absolute;left: 50%;top: 33%;width: 170px;margin-left: -85px;">
+              <img ng-src="img/guidePage/money.png" alt="" style="position: absolute;left: 50%;top: 43%;margin-left: -50px;" >
+            </div>
+            <div id = "tips-1" class="animate hidden">
+                <h2 class="animated bounceInDown"></h2>
+                <li class="animated bounceInLeft"></li>
+                <li class="animated bounceInRight"></li>
+            </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class = "item-logo" style="background-image: url(img/guidePage/communities.png)">
+            <!-- <a href="#">Mall</a> -->
+            <div>
+              <img class="guideanimate3"  ng-src="img/guidePage/community.png" style="position: absolute;left: 50%;top: -1%;margin-left: -145px;">
+            </div>
             <div class="animate guide-show">
                 <button id = "close" ng-click = "goHome()">立即体验</button>
             </div>

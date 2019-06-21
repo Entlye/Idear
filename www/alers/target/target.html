@@ -1,4 +1,5 @@
 <ion-view id="target" view-title="目标" cache-view="false">
+    <div style="font-size: 28px;width: 100%;height: 50px;line-height: 50px;text-align: center;background-color: orange;">目标</div>
     <div class = "target_find_nav">
       <div class = "target_find_nav_left">
         <div class="bar bar-header target-header target_find_nav_list">
@@ -8,17 +9,10 @@
                   进行中
                 </a>
               </li>
-        
-              <li>
-                <a class="target-header-top" ng-class="{'target-active':data.current==2}" ng-click="actions.setCurrent(2)" href="javascript:void(0);">
-                  未开始
-                </a>
-              </li>
-        
               <li>
                 <a class="target-header-top" ng-class="{'target-active':data.current==3}" ng-click="actions.setCurrent(3)" href="javascript:void(0);">
                   已结束
-                </a>
+                </a>   
               </li>
               <li class="sideline"></li>
             </ul>

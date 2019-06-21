@@ -91,9 +91,15 @@
 }
 
 .target_find_nav_list ul {
-    position: relative;
+    position: absolute;
+
     white-space: nowrap;
+    
     font-size: 0;
+    
+    left: 50%;
+    
+    margin-left: -74px;
 }
 
 .target_find_nav_list ul li {

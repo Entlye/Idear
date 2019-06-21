@@ -39,6 +39,6 @@
         //下次打开app直接进入首页
         localStorage['isNotFirst'] = true
         //利用状态机制,跳转到首页
-        $state.go('tab.home')
+        $state.go('guidePage')
     }
  })

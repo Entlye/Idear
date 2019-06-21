@@ -9,7 +9,8 @@
      //使用H5提供的LocalStorage来存储一个boolean变量,判断是否第一次打开App,默认值为false
     if(localStorage['isNotFirst']){
         //跳转到首页
-        $urlRouterProvider.otherwise('/tab/home');
+        // $urlRouterProvider.otherwise('/tab/home');
+        $urlRouterProvider.otherwise('/guidePage')
     }else{
         // 设置项目的启动页面URL
         $urlRouterProvider.otherwise('/guidePage')
