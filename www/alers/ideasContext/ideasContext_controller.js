@@ -14,27 +14,54 @@ angular.module('ideasContext.controller', ['ideasContext.service'])
 
         })
 
-     /*    setTimeout(function () {
-        }, 100) */
+        /*    setTimeout(function () {
+           }, 100) */
 
         // 强制刷新图片
         $scope.param = (new Date()).valueOf();
-    })
+   
 
-    .run(function ($ionicPlatform) {
-        $ionicPlatform.ready(function () {
-            // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-            // for form inputs)
-            if (window.cordova && window.cordova.plugins.Keyboard) {
-                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-            }
-            if (window.StatusBar) {
-                StatusBar.styleDefault();
-            }
-        });
-    })
+    // 点赞的js
 
-    .controller('actionsheetCtl', ['$scope', '$ionicActionSheet', '$timeout', function ($scope, $ionicActionSheet, $timeout) {
+    $('body').on("click", '.heart', function () {
+
+        var A = $(this).attr("id");
+        var B = A.split("like");
+        var messageID = B[1];
+        var C = parseInt($("#likeCount" + messageID).html());
+        $(this).css("background-position", "")
+        var D = $(this).attr("rel");
+
+        if (D === 'like') {
+            $("#likeCount" + messageID).html(C + 1);
+            $(this).addClass("heartAnimation").attr("rel", "unlike");
+
+        }
+        else {
+            $("#likeCount" + messageID).html(C - 1);
+            $(this).removeClass("heartAnimation").attr("rel", "like");
+            $(this).css("background-position", "left");
+        }
+
+
+    });
+
+})
+
+    /* .run(function ($ionicPlatform) {
+    $ionicPlatform.ready(function () {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if (window.cordova && window.cordova.plugins.Keyboard) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        }
+        if (window.StatusBar) {
+            StatusBar.styleDefault();
+        }
+    });
+}) */
+
+/*     .controller('actionsheetCtl', ['$scope', '$ionicActionSheet', '$timeout', function ($scope, $ionicActionSheet, $timeout) {
         $scope.show = function () {
 
             var hideSheet = $ionicActionSheet.show({
@@ -58,4 +85,4 @@ angular.module('ideasContext.controller', ['ideasContext.service'])
             }, 10000000000000000);
 
         };
-    }])
+    }]) */
