@@ -6,14 +6,15 @@ body{color: #333333;}
     }
     #container h3{font-family: "Microsoft YaHei";}
     .heart {
-	    background: url(../images/web_heart_animation.png);
+	    background: url(../img/web_heart_animation.png);
 	    background-position: left;
 	    background-repeat: no-repeat;
 	    height: 100px;
 	    width: 100px;
 	    cursor: pointer;
-	    position: absolute;
-	    left:-14px;
+	    /* position: absolute;
+		left:-14px; */
+		margin: 0 auto;
         background-size:2900%;
     }
     .heart:hover, .heart:focus{
@@ -39,7 +40,6 @@ body{color: #333333;}
 	}
 
 	.heartAnimation {
-    display: inline-block;
     -webkit-animation-name: heartBlast;
     animation-name: heartBlast;
     -webkit-animation-duration: .8s;
@@ -48,10 +48,15 @@ body{color: #333333;}
     animation-iteration-count: 1;
     -webkit-animation-timing-function: steps(28);
     animation-timing-function: steps(28);
-    background-position: right;
+	background-position: right;
+	margin: 0 auto;
+
+}
     }
     .feed p{font-family: "Microsoft YaHei",'Georgia', Times, Times New Roman, serif; font-size: 25px;}
-    .feed{clear: both; margin-bottom: :20px; height: 150px; position: relative;}
+    .feed{clear: both; margin-bottom: :20px; height: 100px; position: relative;}
     a{color: #7ac9ed;}
     p{margin: 0px; padding: 0px;}
-    .likeCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 32px;margin-left: 68px;font-size: 25px;color: #999999}
+    .likeCount{font-family: 'Georgia', Times, Times New Roman, serif;font-size: 25px;color: #999999;margin: 0 auto;
+
+		text-align: center;}
