@@ -10,7 +10,7 @@ angular.module('account_register.service', ['account_register.controller'])
                 console.log(name)
                 console.log(password)
                 //  向后台发起请求，更新个人信息
-                var url = 'http://127.0.0.1:8080/idear/Login?name=' + name;
+                var url = configService.getHostUrl() + '/idear/Login?name=' + name;
                 url += '&password=' + password;
                 url += '&callback=JSON_CALLBACK';
                 $http.jsonp(url)

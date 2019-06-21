@@ -6,7 +6,11 @@
 angular.module('config',[])
 
 .factory('configService',function(){
+<<<<<<< HEAD
     var url = 'http://127.0.0.1:8084/idear/'
+=======
+    var url = 'http://192.168.1.101:8080/idear/'
+>>>>>>> 3d5bd5c116ec90babdc92300b2b5dd9dc2e1bdfa
     return{
         getHostUrl:function(){
             return url;
