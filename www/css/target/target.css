@@ -1,0 +1,142 @@
+/* 
+*目标页的CSS样式
+*/
+.target-header{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.target-header>ul li {
+    float: left;
+}
+.target-active {
+    transform: scale(1.15);
+  }
+.target-header>ul{
+    position: absolute;
+    left: 50%;
+    margin-left: -111px;
+}
+.target-header-top{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.target-add{
+    position: absolute;
+    right: 6%;
+    font-size: 20px;
+    top: 38%;
+    color: black;
+}
+#target-content{
+    position: absolute;
+    top: 50px;
+    bottom: 58px;
+    text-align: center;
+}
+.target_position {
+    position: relative;
+}
+.targetless{
+    display: inline-block;
+}
+.targetless img{
+    width: 116px;
+}
+.target-tip{
+    display: inline-block;
+    width: 133px;
+}
+.target-tip>div {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+.span2{
+    color: gray;
+}
+
+/* 顶部选项卡 */
+.target_find_nav {
+    width: 100%;
+    height: 45px;
+    background-color: #f9f9f9;
+    position: fixed;
+    top: 45px;
+    z-index: 99;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+}
+
+.target_find_nav_left {
+    height: 46px;
+    position: relative;
+    overflow: hidden;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+.target_find_nav_list {
+    position: absolute;
+    left: 0;
+}
+
+.target_find_nav_list ul {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.target_find_nav_list ul li {
+    display: inline-block;
+}
+.target_find_nav_list ul li :not(:last-child) {
+    margin-left: 5px;
+}
+
+.target_find_nav_list ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 46px;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+}
+
+.target_find_nav_cur a {
+    color: #e05d27 !important;
+}
+
+.sideline {
+    display: block;
+    position: absolute;
+    border: 0;
+    height: 2px;
+    background-color:#e05d27;
+    left: 0;
+    top: 36px;
+    pointer-events: none;
+}
+
+.target_content {
+    border: none;
+    height: 100%;
+    position: fixed;
+    top: 90px;
+    padding-top: 50%;
+}
+.target_content>div {
+    display: inline-block;
+    width: 33.333%;
+    float: left;
+}

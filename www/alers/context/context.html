@@ -1,0 +1,100 @@
+<ion-view>
+  <ion-content class="scroll-content" scroll="true" ng-app="context.controller" ng-controller="actionsheetCtl">
+    <div class="bar bar-header bar-light return-back">
+      <a ng-href="#/home" style="position: absolute;left: 3.5%;color: #000;"><i class="icon ion-chevron-left"
+          style="position: relative;left: 3%;"></i></a>
+          <a ng-href="#/publish" style="color: #000;">
+            <i class="icon ion-more" style="position: absolute;right: 4%;"></i></a>
+    </div>
+    <div class="list">
+      <div class="item-con item-avatar" href="#">
+        <div class="topName item-avatar">
+          <img ng-src="{{data.user.imgUrl}}">
+          <h5 style="margin-left: 48px;margin-top: 11px;width: 60px;">{{data.user.name}}</h5>
+          <div class="date">
+            {{data.time}}
+          </div>
+        </div>
+
+        <div class="contextTitle">
+          <h4 style="font-size: 17px;font-weight: bold;margin-top: 6px;">{{data.title}}</h4>
+        </div>
+        <div class="contextText" ng-bind-html = "data.context" >        
+          {{data.context}}
+        </div>
+        <div class="imgTree">
+          <img class="context-img" ng-src="{{data.imgurl}}">
+          <img class="context-img" ng-src="{{data.imgurl2}}" ng-if = "data.imgurl2!='null'">
+        </div>
+        <div class="flow-footer2">
+          <img ng-src="img/home/share.png" style="height: 20px;width: 20px;">
+          <div class="text-share">分享</div>
+          <img ng-src="img/home/liaotian.png" style="height: 20px;width: 20px;margin-left: 3px;">
+          <div class="text-chat">{{data.comcount}}</div>
+          <img ng-src="img/context/zan.png" style="height: 20px;width: 20px;margin-left: -4px;margin-top: -1px;">
+          <div class="text-chat">{{data.supcount}}</div>
+          <div class="text-label2">{{data.user.UserType}}</div>
+        </div>
+      </div>
+      <div class="order">
+        全部回复
+        <div class="orderBy">
+          正序<i class="icon ion-chevron-down" style="margin-left: 3px;font-size: 10px;"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-con item-avatar" href="#">
+      <img src="//www.runoob.com/try/demo_source/spengler.jpg">
+      <h5 class="H5">贝尔
+        </br><span class="layer">第2楼 • 05-15</span>
+      </h5>
+      <p class="context-p">学姐我想问下，现在开始复习来得及吗？
+        基础不是很好，是不是要报班呀？</p>
+      <div class="haveReply" ng-click="show()" style="cursor:pointer;padding-left: 8px;padding-top: 3px;font-size: 14px;">
+        查看3条回复
+      </div>
+    </div>
+
+    <div class="item-con item-avatar" href="#">
+      <img src="//www.runoob.com/try/demo_source/stantz.jpg">
+      <h5 class="H5">Ray
+        </br><span class="layer">第3楼 • 05-15</span>
+      </h5>
+      <p class="context-p">帮顶一下，学姐很努力呀！！</p>
+      <div class="notReply" style="font-size: 14px;">
+        回复
+      </div>
+    </div>
+
+    <div class="item-con item-avatar" href="#">
+      <img src="//www.runoob.com/try/demo_source/winston.jpg">
+      <h5 class="H5">Winston
+        </br><span class="layer">第4楼 • 05-15</span>
+      </h5>
+      <p class="context-p">本人93年，2017年大学毕业。
+        2020考研三战备战中，考北京理工大</p>
+      <div class="haveReply" style="padding-left: 8px;padding-top: 3px;font-size: 14px;">
+        查看7条回复
+      </div>
+    </div>
+
+    <div class="item-con item-avatar" href="#">
+      <img src="//www.runoob.com/try/demo_source/tully.jpg">
+      <h5 class="H5">Tully
+        </br><span class="layer">第5楼 • 05-15</span>
+      </h5>
+      <p class="context-p">Okay, who brought the dog?</p>
+    </div>
+
+    <div class="item-con item-avatar" href="#">
+      <img src="//www.runoob.com/try/demo_source/slimer.jpg">
+      <h5 class="H5">Slimer
+        </br><span class="layer">第6楼 • 05-16</span>
+      </h5>
+      <p class="context-p">Boo!</p>
+    </div>
+
+    </div>
+  </ion-content>
+</ion-view>

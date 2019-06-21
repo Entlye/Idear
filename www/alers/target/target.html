@@ -1,0 +1,66 @@
+<ion-view id="target" view-title="目标" cache-view="false">
+    <div class = "target_find_nav">
+      <div class = "target_find_nav_left">
+        <div class="bar bar-header target-header target_find_nav_list">
+            <ul>
+              <li>
+                <a class="target-header-top" ng-class="{'target-active':data.current==1}" ng-click="actions.setCurrent(1)" href="javascript:void(0);">
+                  进行中
+                </a>
+              </li>
+        
+              <li>
+                <a class="target-header-top" ng-class="{'target-active':data.current==2}" ng-click="actions.setCurrent(2)" href="javascript:void(0);">
+                  未开始
+                </a>
+              </li>
+        
+              <li>
+                <a class="target-header-top" ng-class="{'target-active':data.current==3}" ng-click="actions.setCurrent(3)" href="javascript:void(0);">
+                  已结束
+                </a>
+              </li>
+              <li class="sideline"></li>
+            </ul>
+            <a ng-href = "#/target_add"><i class = "fa fa-plus target-add" ></i></a>
+          </div>
+        </div>
+      </div>
+      <ion-content id="target-content" class="scroll-content" scroll="false">
+        <div class = "target_content">
+          <div>
+            <div class = "target_position">
+              <div class = "targetless"><img ng-src="img/target/target.png" alt=""></div>
+              <div class = "target-tip">
+                <div>
+                  <span class = "span1">无已结束目标</span><br/>
+                  <span class = "span2">点击"+"按钮添加目标</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class = "target_position">
+              <div class = "targetless"><img ng-src="img/target/target.png" alt=""></div>
+              <div class = "target-tip">
+                <div>
+                  <span class = "span1">无已结束目标</span><br/>
+                  <span class = "span2">点击"+"按钮添加目标</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class = "target_position">
+              <div class = "targetless"><img ng-src="img/target/target.png" alt=""></div>
+              <div class = "target-tip">
+                <div>
+                  <span class = "span1">无已结束目标</span><br/>
+                  <span class = "span2">点击"+"按钮添加目标</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-content>
+</ion-view>

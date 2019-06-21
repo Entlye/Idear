@@ -1,0 +1,148 @@
+/* 社团页样式 */
+.recently-club>div {
+    width: 93%;
+    margin: 0 auto;
+}
+.club-title {
+    width: 87% !important;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px !important;
+}
+.club-title span,.club-attention>div:first-child span {
+    font-family: 楷体;
+    font-weight: bold;
+    font-size: 15px;
+}
+.club-title i::before {
+    position: absolute;
+    top: 20%;
+    bottom: 50%;
+    right: 0%;
+}
+.club-list {
+    width: 100%;
+    height: 110px;
+}
+.club-soley {
+    width:33.333%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.club-border {
+    background-color:#fff;
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 10%;
+    right: 10%;
+    margin-top: 5px;
+    box-shadow: 0px 1px 5px 1px #e2e2e2;
+}
+.club-border p {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    margin-left: -28px;
+}
+
+.club-border-1::before,.club-border-2::before,.club-border-3::before{
+    content: "";
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.club-border-1::before{
+    background-color: rgb(1, 96, 124);
+}
+.club-border-2::before{
+    background-color: rgb(141, 0, 0);
+}
+
+.club-border-3::before{
+    background-color: rgb(68, 77, 155);
+}
+.club-border-1::after,.club-border-2::after,.club-border-3::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    box-shadow: 0px 0px 2px 1px #a2a2a2;
+}
+.club-border-1::after{
+    background: url("../../img/club/jjuCollege.jpg") no-repeat center;
+    background-size: 50px;
+}
+.club-border-2::after{
+    background: url("../../img/club/art.jpg") no-repeat center;
+    background-size: 50px;
+}
+.club-border-3::after{
+    background: url("../../img/club/inforUniversity.jpg") no-repeat center;
+    background-size: 50px;
+}
+
+.club-attention{
+    margin-top: 25px !important;
+    width: 87% !important;
+    height: 20px;
+}
+.club-attention img {
+    width: 50px;
+    border-radius: 45%;
+    float: left;
+    margin-right: 10px;
+}
+.club-attention ul{
+    margin-top: 20px;
+}
+.club-attention ul li{
+    margin-top: 20px;
+    height: 50px;
+}
+.club-attention ul li div:nth-child(2) {
+    height: 50px;
+}
+.club-name {
+    color: black;
+    font-size: 15px;
+}
+.club-breif {
+    color: gray;
+    overflow:hidden;
+	text-overflow:ellipsis;    /*超出省略*/
+    white-space:nowrap;        /*强制不换行 */
+    margin-top: 5px;
+}
+.club-breif::first-letter{
+    color: #e05d27;
+    font-size: 18px;
+}
+.club-bottom {
+    height: 50px;
+    margin-top: 365px !important;
+    text-align: center;
+    color: gray;
+}
+.club-bottom hr {
+    width: 30%;
+    display: inline-block;
+    border:none;
+    height: 1px;
+    border-top:1px solid #cccccc;
+}

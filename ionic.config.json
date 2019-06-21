@@ -1,0 +1,31 @@
+<<<<<<< HEAD
+{
+  "name": "ionic-app-base",
+  "app_id": "",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
+=======
+{
+  "name": "ionic-app-base",
+  "app_id": "",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
+>>>>>>> 05ea30f04194b143bd52fff543b255fce3dca9b4

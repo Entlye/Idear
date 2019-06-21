@@ -1,0 +1,116 @@
+/* 添加目标页面css样式 */
+.target-add-header{
+    font-size: 24px;
+    height: 70px;
+    line-height: 60px;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+}
+.target-add-header span {
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    font-weight: bold;
+}
+#target_add-content {
+    position: absolute;
+    top: 70px;
+    bottom: 85px;
+}
+.add img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.target{
+    height: 115px;
+    margin-top: 12px;
+}
+.target-select {
+    font-size: 20px;
+    margin-left: 4.9%;
+    text-align: left;
+    padding-left: 20px;
+}
+.target-health{
+    box-shadow: inset 10px 0px 0px 0px #e05d27;
+}
+.target-study{
+    box-shadow: inset 10px 0px 0px 0px #1015e3;
+}
+.target-sport{
+    box-shadow: inset 10px 0px 0px 0px #00ff00;
+}
+.target-entertainment{
+    box-shadow: inset 10px 0px 0px 0px #af12d6;
+}
+.target-emotion {
+    box-shadow: inset 10px 0px 0px 0px #d61212;
+}
+.define{
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    background-color: #e05d27;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 30px;
+}
+.health{
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.health-content{
+    height:80px;
+    width: 100%;
+    margin-top: 13px;
+}
+
+.blank1{
+    float: left;
+    height: 60px;
+    width: 4.9%;
+}
+.add{
+    float: left;
+    height: 60px;
+    width: 42.6%;
+    line-height: 60px;
+    background-color: #f2f2f2f2;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.blank2{
+    float: left;
+    height: 60px;
+    width: 5%;
+}
+.smalltarget{
+    font-size: 18px;
+}
+.target-back {
+    position: absolute;
+    top: 22%;
+    left: 6%;
+    font-size: 35px;
+    color: black;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+display: none;
+}
+::-moz-scrollbar {/*隐藏滚轮*/
+display: none;
+}
+::-o-scrollbar {/*隐藏滚轮*/
+display: none;
+}
+::-ms-scrollbar {/*IE内核 隐藏滚轮*/
+display: none;
+}

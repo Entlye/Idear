@@ -1,0 +1,43 @@
+<!-- 导航页 -->
+<ion-tabs class="tabs-color-active-assertive tabs-icon-top">
+
+    <ion-tab title="首页" icon-on="icon-homefill" icon-off="icon-home" href = "#/tab/home">
+      <ion-nav-view name = "tab-home"></ion-nav-view>
+    </ion-tab>
+  
+    <ion-tab title="社团" icon-on="icon-wefill" icon-off="icon-we " href = "#/tab/club">
+      <ion-nav-view name = "tab-club"></ion-nav-view>
+    </ion-tab>
+  
+    <ion-tab icon-on="tab-add" icon-off="tab-add">
+      
+    </ion-tab>
+
+    <div class = "tab-div-add">
+      <img class = "tab-img" ng-src="img/tab/add.png" alt="" ng-click = "openModal()">
+    </div>
+    
+    <ion-tab title="目标" icon-on="icon-hotfill" icon-off="icon-hot" href = "#/tab/target" >
+      <ion-nav-view name = "tab-target"></ion-nav-view>
+    </ion-tab>
+    
+    <ion-tab title="我的" icon-on="icon-myfill" icon-off="icon-my" href = "#/tab/account">
+      <ion-nav-view name = "tab-account"></ion-nav-view>
+    </ion-tab>
+
+    <script id="modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <div class = "tab-mask" ng-click = "modal.hide()"></div>
+        <div class = "tab-addAll">
+          <div ng-click = "goPublish()" class = "tab-addDetail"><div><img ng-src="img/tab/iconfront-.png" alt="" style="width: 46px;margin-top: 3px;"></div><p>校园资讯</p></div>
+          <div ng-click = "goPublishIdeas()" class = "tab-addDetail"><div><img ng-src="img/tab/linggan.png" alt="" style="width: 42px;height: 40px;margin-top: 4px;"></div><p>精彩点子</p></div>
+          <div class = "tab-addDetail"><div><img ng-src="img/tab/huati.png" alt="" style="width: 40px;height: 41px;margin-top: 4px;"></div><p>话题投票</p></div>
+          <div class = "tab-addDetail"><div><img ng-src="img/tab/lvhang-_1.png" alt="" style="width: 35px;margin-top: 5px;height: 38px;"></div><p>旅游攻略</p></div>
+        </div>
+        <div class = "tab-addAll-bottom"></div>
+        <img class = "tab-45-img" ng-src="img/tab/add.png" alt="" ng-click = "modal.hide()">
+        
+      </ion-modal-view>
+    </script>
+  </ion-tabs>
+  

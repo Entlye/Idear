@@ -1,0 +1,70 @@
+/* 我的页页面css样式 */
+.my-logo p{
+    font-weight: bold;
+}
+.login{
+    height: 170px;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+}
+.ball{
+    width: 90px;
+    height: 90px;
+    background-color: #e05d27;
+    border-radius: 50%;
+    position: absolute;
+    top: 6%;
+    left: 40%;
+}
+.ball span{
+    position: absolute;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    left: 23%;
+    font-size: 20px;
+    color: white;
+}
+.login-user{
+    background-image: url(imgUrl);
+}
+.my{
+    height: 100px;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+}
+.my-logo{
+    float: left;
+    width: 25%;
+    height: 100px;
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    line-height: 28px;
+    padding-top: 20px;
+}
+.my-logo img{
+    width:33px;
+}
+.newInformation{
+    height: 50px;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+}
+.newInformation span{
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    position: absolute;
+    left: 4.5%;
+    font-weight: bold;
+}
+.newInformation i{
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+}
+.news-go{
+    right: 9%;
+}

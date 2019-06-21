@@ -1,0 +1,151 @@
+.return-back{
+    height: 27px;
+}
+.context-card{
+    width: 100%;
+    height: 100%;
+    border-top:0px #000000 solid;
+    border-left:0px #000000 solid;
+    border-right:0px #000000 solid;
+    border-bottom:4px #d4d4d4 solid;
+
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+
+   /*  display: block; */
+    display: flex;
+    flex-direction: column;
+    margin: -1px;
+    padding: 16px;
+    padding-bottom: 7px;
+}
+.topName{
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    position: absolute;
+    right: 3%;
+    top: 6%;
+    color: #9d9d9d;
+}
+
+.contextText{
+    line-height: 23px;
+    font-size: 14px;
+    overflow:hidden;
+    margin-top: 8px;
+}
+.imgTree{
+    color: #000000;
+}
+.context-img{
+    width: 100%;
+    margin-top: 4px;
+}
+
+.card-footer {
+    width: 100%;
+    height: 24px;
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 0.3px;
+  }
+  
+  .text-share,
+  .text-chat {
+    font-size: 13px;
+    width: 26px;
+    height: 20px;
+    font-family: STKaiti;
+  }
+  
+  .flow-footer2 {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+  
+  .text-label2 {
+    width: 72px;
+    height: 20px;
+    background-color: #E05D27BF;
+    /* margin-left: 131px; */
+    margin-top: -1px;
+    border-radius: 4px;
+    font-size: 13px;
+    text-align: center;
+
+    right: 16px;
+    position: absolute;
+  }
+  .order{
+    width: 100%;
+    height: 33px;
+    padding-left: 18px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 14px;    
+    border-bottom:1px #d4d4d4 solid;
+    border-top: 4px #bcbcbc solid;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .orderBy{
+        position: absolute;
+        right: 6%;
+        font-weight: initial;
+  }
+  .item-con {
+
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    padding: 16px;
+    padding-bottom: 2px;
+    border-top: 0px #000000 solid;
+    border-left: 1px #000000 solid;
+    border-right: 1px #000000 solid;
+    
+    font-size: 16px;
+
+}
+.H5{
+    margin-left: 50px;
+    margin-top: 1px;
+}
+.layer{
+    font-size: 11px;
+    color:#898989;
+}
+.haveReply{
+    width: 99%;
+    height: 25px;
+    background-color: #eaeaea;
+    border-radius: 3px;
+}
+.notReply{
+    width: 99%;
+    height: 17px;
+    margin-left: 6px;
+    color: #6c6969;
+}
+.context-p{
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,99 @@
+/* 社团详情页样式 */
+.club_detail_scroll {
+    background-color: #f6f6f6 !important;
+    position: absolute;
+    top: 180px;
+}
+.club_detail_wholly {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(1, 96, 124);
+}
+
+.club_detail_header {
+    color: white;
+    font-size: 28px;
+    height: 50px;
+    line-height: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+.club_detail_header div {
+    display: inline-block;
+}
+.club_detail_header>div:first-child {
+    float: left;
+}
+.club_detail_header>div:last-child{
+    float: right;
+}
+
+.club_detail_title {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+.club_detail_title>div {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.club_detail_title img {
+    width: 50px;
+    border-radius: 30%;
+}
+.club_detail_title>div>span {
+    position: absolute;
+    bottom: 50%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: -25px;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+.club_detail_title>div>div {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+}
+.signIn img {
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 3px;
+}
+.signIn>span {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 3px;
+    line-height: 20px;
+}
+.club_detail_stick {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    height: 70px;
+    position: fixed;
+    top: 145px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0px #cccccc;
+    padding-left: 15px;
+}
+.club_detail_stick p{
+    line-height: 70px;
+}
+.club_detail_stick p span:first-child {
+    color: #e05d27;
+}

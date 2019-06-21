@@ -1,0 +1,40 @@
+<ion-view>
+  <ion-content class="scroll-content" scroll="true" ng-app="ideasContext.controller"  ng-controller="actionsheetCtl" ng-repeat="item in data.rows">
+    <div class="bar bar-header bar-light return-back">
+      <a ng-href="#/home" style="position: absolute;left: 3.5%;color: #000;"><i class="icon ion-chevron-left"
+          style="position: relative;left: 3%;"></i></a>
+          <a ng-href="#/publish" style="color: #000;">
+            <i class="icon ion-more" style="position: absolute;right: 4%;"></i></a>
+    </div>
+    <div class="list">
+      <div class="item-con item-avatar" href="#/">
+        <div class="topName item-avatar">
+          <img ng-src="{{item.user.imgUrl}}?a={{param}}">
+          <h5 style="margin-left: 48px;margin-top: 11px;width: 60px;">{{item.user.name}}</h5>
+          <div class="date">
+            {{item.time}}
+          </div>
+        </div>
+
+        <div class="contextTitle">
+          <h4 style="font-size: 17px;font-weight: bold;margin-top: 6px;">{{item.title}}</h4>
+        </div>
+        <div class="contextText" ng-bind-html="item.context">
+         {{item.context}}
+        </div>
+        <div class="imgTree">
+          <img class="context-img" ng-src="{{item.imgurl}}?a={{param}}">
+        </div>
+        <div class="flow-footer2">
+          <img ng-src="img/home/share.png" style="height: 20px;width: 20px;">
+          <div class="text-share">分享</div>
+          <img ng-src="img/context/zan.png" style="height: 20px;width: 20px;margin-left: -4px;margin-top: -1px;">
+          <div class="text-chat">{{item.supcount}}</div>
+          <div class="text-label2">{{item.user.UserType}}</div>
+        </div>
+      </div>
+
+    </div>
+    
+  </ion-content>
+</ion-view>

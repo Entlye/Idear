@@ -1,0 +1,98 @@
+/* 注册页样式 */
+.cancel{
+    height: 85px;
+}
+.cut{
+    font-size: 50px;
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+}
+.register{
+    height: 200px
+}
+.free-register{
+    height: 45px;
+    line-height: 45px;
+}
+.free-register img{
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+.free-register span{
+    position: absolute;
+    left: 36%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.placehoder{
+    height: 30px;
+    line-height: 30px;
+}
+.placehoder span{
+    color: #a2a2a2;
+    font-size: 15px;
+    position: absolute;
+    left: 14.5%;
+    margin-top: 10px;
+}
+.phone{
+    height: 100px;
+}
+.inputnumber{
+    height: 60px;
+    width: 80%;
+    position: absolute;
+    top: 31%;
+    left: 10%;
+    border-bottom: 1px solid;
+    border-color: #a2a2a2;
+}
+.phone input{
+    height: 43px;
+    line-height: 50px;
+    position: absolute;
+    left: 30%;
+    top: 29%;
+    font-size: 20px;
+    font-family: 楷体;
+    border-bottom: 1px solid;
+    border-color: #a2a2a2;
+}
+.inputnumber span{
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.go{
+    height: 120px;
+}
+.go img{
+    width: 50px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    margin-left: -25px;
+}
+.outlink{
+    height: 37px;
+}
+.qq{
+    float: left;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 34%;
+    bottom: 35.5%;
+}
+.wechat{
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 34%;
+    bottom: 34.5%;
+}

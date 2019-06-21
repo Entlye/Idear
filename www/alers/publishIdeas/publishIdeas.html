@@ -1,0 +1,58 @@
+<div class="bar bar-header bar-light return-back">
+	<a ng-href="#/home" style="position: absolute;left: 3.5%;color: #000;"><i class="icon ion-chevron-left"
+			style="position: relative;left: 3%;"></i></a>
+	<label class="publish-text">发布</label>
+</div>
+
+<!-- 提交表单 -->
+<form ng-controller="publishIdeasController">
+	<input class="pubTitle" type="text" name="" placeholder="标题~" ng-model="title">
+	<div class="item item-input item-select" style="padding-left: 12px;height: 35px;border-bottom: 2px solid #d4d4d4 !important;border-top: 2px solid #d4d4d4;">
+		<div class="input-label" id="type1" style="color: #bdbdbd;font-size: 14px;font-family: 微软雅黑;">
+		  类型
+		</div>
+		<select  ng-model="type">
+			<option value="晚会活动">晚会活动</option>
+			<option value="KTV唱歌">KTV唱歌</option>
+			<option value="学院联谊">学院联谊</option>
+			<option value="户外活动">户外活动</option>
+			<option value="团日活动">团日活动</option>
+		  </select>
+	</div>
+	<textarea  class="pubText" style="padding-top: 10px !important;height: 340px;" type="text" name="" placeholder="写点什么吧！" ng-model="context"></textarea>
+
+<div class="inner" >
+	<div class="problem">
+		<div class="custom_img">
+			<div class="custom_img_top">
+				<p>添加图片：</p>
+				<p><span class="upload_img_length">0</span>/3</p>
+			</div>
+
+			<!--点击上传图片 触发下面的div 点击事件-->
+			<div class="upload_img_wrap">
+				<div id="imgBox"></div>
+				<img class="upload_img" data-id="1" src="img/upload_img.png" />
+				<img style="display:none" class="upload_img" data-id="2" src="img/upload_img.png" />
+				<img style="display:none" class="upload_img" data-id="3" src="img/upload_img.png" />
+			</div>
+			<div style="display: none;width: 100%;height: 100vh;position: relative;">
+				<form id="upBox" class="upload_form" action="" method="post" enctype="multipart/form-data">
+					<div style="display: none;" id="inputBox">
+						<input type="file" name="image[]" data-id="1" title="请选择图片" id="file1"
+							accept="image/png,image/jpg,image/gif,image/JPEG" />
+						<input type="file" name="image[]" data-id="2" title="请选择图片" id="file2"
+							accept="image/png,image/jpg,image/gif,image/JPEG" />
+						<input type="file" name="image[]" data-id="3" title="请选择图片" id="file3"
+							accept="image/png,image/jpg,image/gif,image/JPEG" /> 点击选择图片
+					</div>
+					<input style="display:none" type="submit" id="sub" />
+				</form>
+			</div>
+		</div>
+		<button class="custom_sub2" id="btn" ng-click="looklog()">确认发布</button>
+	</div>
+</div>
+
+</form>
+

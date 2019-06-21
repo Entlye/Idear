@@ -1,0 +1,115 @@
+<!-- 首页页面 -->
+<ion-view id="home" view-title="首页" cache-view="false">
+  <div class="home">
+    <!--搜索区域-->
+    <div id="headerBar" class="headerBar">
+      <div id="headerBar-bg"></div>
+      <a class="headerBar-search" ng-href="#">
+        <span class="icon ion-ios-search-strong icon-search-font"></span>
+        <div>
+          <input maxlength="30" autocomplete="on" value="" placeholder="大家都在搜：周三晚会玩什么？" ng-focus="Focus($event)"
+            ng-blur="Blur($event)" />
+        </div>
+      </a>
+    </div>
+
+    <div>
+      <!-- <span ng-bind="m.title"></span> -->
+      <div class="find_nav">
+        <div class="find_nav_l  eft">
+          <div class="bar bar-header find_nav_list">
+            <ul class="find_ul">
+              <li ng-repeat="m in titlelist" ng-class="slectIndex==$index ? 'active' : '' "
+                ng-click="select($index,true)">
+                <a class="nav-tab-a" href="javascript:void(0);">
+                  {{m.title}}
+                </a>
+              </li>
+              <li class="sideline"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ion-content id="home-content" class="scroll-content" scroll="true">
+
+
+      <ion-slide-box auto-play="false" does-continue="true" show-pager="false"
+        on-slide-changed="winnerTabChange($index)" delegate-handle="winnerProductTab">
+        <ion-slide class="myOrderList">
+          <div ng-show="show_0">
+            <div class="content has-header ionic-pseudo">
+
+              <div class="list">
+
+                <a class="item item-avatar home-card" ng-href="#/context/{{item.id}}" ng-repeat = "item in infoData">
+                  <img ng-src="{{item.user.imgUrl}}">
+                  <h2>{{item.user.name}}<img ng-src="img/home/close.png" style="height: 15px;position: absolute;right: 16px;"></h2>
+                  <h2 style="margin-top: 20px;margin-bottom: 2px !important;font-family: 楷体;font-size: 14px;margin-left: 0px;color: #666">{{item.title}}</h2>
+                  <p class="p-card words" ng-bind-html="item.context">{{item.context}}</p>
+                  <div class="home-card-div">
+                    <div ng-class = "{'img-active':item.imgurl2=='null', 'img-active2':item.imgurl2!='null'}">
+                      <img class="home-card-img" ng-src="{{item.imgurl}}" ng-if = "item.imgurl!='null'" style="width:100%">
+                    </div>
+                  <div style="float:left;width: 2%"></div>
+                  <div style="float:right;width: 49%" ng-if = "item.imgurl2!='null'">
+                    <img class="home-card-img" ng-src="{{item.imgurl2}}"  style="width:100%">
+                  </div>
+                  </div>
+                  <div class="flow-footer">
+                    <img ng-src="img/home/share.png" style="height: 21px;width: 20px;">
+                    <div class="text-share">分享</div>
+                    <img ng-src="img/home/liaotian.png"
+                      style="height: 19px;width: 20px;margin-left: 3px;margin-top: 0.7px;">
+                    <div class="text-chat">{{item.supcount}}</div>
+                    <div class="text-label">{{item.user.UserType}}</div>
+                  </div>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </ion-slide>
+        <ion-slide class="myOrderList">
+          <div ng-show="show_1">
+            <ion-slide>
+              <div class="box blue" ng-repeat="item in data.rows">
+                <a class="item item-avatar home-card" ng-href="#/ideasContext/{{item.id}}">
+                  <img ng-src="{{item.user.imgUrl}}?a={{param}}">
+                  <h2>{{item.user.name}}<img ng-src="img/home/close.png" style="height: 15px;right: 9%;position: absolute;"></h2>
+                  <h2 style="margin-top: 20px;margin-bottom: 2px !important;font-family: 楷体;font-size: 14px;margin-left: 0px;color: #666">{{item.title}}</h2>
+                  <p class="p-card words" ng-bind-html="item.context">{{item.context}}</p>
+                  <div class="home-card-div">
+                    <img class="ideas-card-img" ng-src="{{item.imgurl}}?a={{param}}">
+                  </div>
+                  <div class="flow-footer">
+                    <img ng-src="img/home/share.png" style="height: 21px;width: 20px;">
+                    <div class="text-share">分享</div>
+                    <img ng-src="img/context/zan.png"
+                      style="height: 19px;width: 20px;margin-left: 3px;margin-top: 0.7px;">
+                    <div class="text-chat">{{item.supcount}}</div>
+                    <div class="text-label">{{item.user.UserType}}</div>
+                  </div>
+                </a>
+              </div>
+            </ion-slide>
+
+          </div>
+        </ion-slide>
+        <ion-slide class="myOrderList">
+          <div ng-show="show_2">
+            <img src="//www.runoob.com/try/demo_source/stantz.jpg">
+          </div>
+        </ion-slide>
+        <ion-slide class="myOrderList">
+
+          <div ng-show="show_3">
+            <img src="//www.runoob.com/try/demo_source/venkman.jpg">
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </ion-content>
+  </div>
+</ion-view>

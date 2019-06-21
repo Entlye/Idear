@@ -1,0 +1,51 @@
+<!-- 添加目标页面 -->
+<ion-view id="account_register" view-title="注册" cache-view="false">
+    <div class="cancel" ng-click = "goBack()">
+        <i class="icon ion-ios-close-empty cut"></i>
+    </div>
+    <div class="register">
+        <div class="free-register">
+            <img ng-src="./img/account/idear.png" alt="">
+            <span>快速登录</span>
+        </div>
+        <div class="placehoder">
+            <span>登录表示同意"用户协议"和"隐私政策"</span>
+        </div>
+
+        <div class="list" style="width: 70%;position: relative;left: 50%;top: 80%;margin: -127px 0 0 -138px;">
+            <div class="item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text"placeholder="Username" ng-model="name">
+            </label>
+            </div>
+             <div class="item-input-inset">
+             <label class="item-input-wrapper">
+                <input type="password" placeholder="Password" ng-model="password">
+             </label>
+            </div>
+         </div>
+         <button class="button button-full" 
+         style="position: absolute;left: 50%;top: 67%;margin: -122px 0 0 -81px;width: 40%;border-radius: 10px;background-color: #f1a04c;" 
+         ng-click="enter(name,password)">登陆</button>
+
+
+
+        <!-- <div class="phone">
+            <div class="inputnumber">
+                <span>+86</span>
+                <input type="text" placeholder="手机号"/>
+            </div>
+        </div>
+    </div>
+    <div class="go">
+        <img ng-src="./img/account/go.png" alt="">
+    </div>
+    <div class="outlink">
+        <div class="qq">
+            <img ng-src="./img/account/qq.png" alt="">
+        </div>
+        <div class="wechat">
+            <img ng-src="./img/account/wechat.png" alt="">
+        </div>
+    </div> -->
+</ion-view>

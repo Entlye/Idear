@@ -1,0 +1,102 @@
+<!-- 添加目标页面 -->
+<ion-view id="target_add" view-title="添加目标" cache-view="false">
+    <!-- 头部 -->
+    <div class="bar bar-header target-add-header">
+        <a ng-href = "#/tab/target"><i class = "fa fa-angle-left target-back" ng-click="goBack()"></i></a>
+        <span>新建目标</span>
+    </div>
+    <!-- 内容区域 -->
+    <ion-content id="target_add-content" class="scroll-content target-content" scroll="ture">
+    <div class = "target-add-content-div">
+        <div class="target">
+            <div class="target-select target-health">健康</div>
+            <div class="health-content">
+                <div class="blank1"></div>
+                <div class="add">
+                    <img ng-src="img/target/clock.png" alt="" />
+                    <span class="smalltarget">早起</span>
+                </div>
+                <div class="blank2"></div>
+                <div class="add">
+                    <img ng-src="img/target/bed.png" alt="" />
+                    <span class="smalltarget">早睡</span>
+                </div>
+                <div class="blank1"></div>
+            </div>
+        </div>
+
+        <div class="target">
+            <div class="target-select target-study">学习</div>
+            <div class="health-content">
+                <div class="blank1"></div>
+                <div class="add">
+                    <img ng-src="img/target/abc.png" alt="" />
+                    <span class="smalltarget">背单词</span>
+                </div>
+                <div class="blank2"></div>
+                <div class="add">
+                    <img ng-src="img/target/read.png" alt="" />
+                    <span class="smalltarget">阅读</span>
+                </div>
+                <div class="blank1"></div>
+            </div>
+        </div>
+
+        <div class="target">
+            <div class="target-select target-sport">运动</div>
+            <div class="health-content">
+                <div class="blank1"></div>
+                <div class="add">
+                    <img ng-src="img/target/run.png" alt="" />
+                    <span class="smalltarget">跑步</span>
+                </div>
+                <div class="blank2"></div>
+                <div class="add">
+                    <img ng-src="img/target/basketball.png" alt="" />
+                    <span class="smalltarget">篮球</span>
+                </div>
+                <div class="blank1"></div>
+            </div>
+        </div>
+
+        <div class="target">
+            <div class="target-select target-entertainment">娱乐</div>
+            <div class="health-content">
+                <div class="blank1"></div>
+                <div class="add">
+                    <img ng-src="img/target/movie.png" alt="" />
+                    <span class="smalltarget">电影</span>
+                </div>
+                <div class="blank2"></div>
+                <div class="add">
+                    <img ng-src="img/target/aircraft.png" alt="" />
+                    <span class="smalltarget">旅行</span>
+                </div>
+                <div class="blank1"></div>
+            </div>
+        </div>
+
+        <div class="target">
+            <div class="target-select target-emotion">情感</div>
+            <div class="health-content">
+                <div class="blank1"></div>
+                <div class="add">
+                    <img ng-src="img/target/love.png" alt="" />
+                    <span class="smalltarget">关心父母</span>
+                </div>
+                <div class="blank2"></div>
+                <div class="add">
+                    <img ng-src="img/target/smile.png" alt="" />
+                    <span class="smalltarget">微笑</span>
+                </div>
+                <div class="blank1"></div>
+            </div>
+        </div>
+        
+    </div>
+</ion-content>
+    <!-- 自定义区域 -->
+    <a href = "#/target_define">
+        <div class="define">自定义</div>
+    </a>
+</ion-view>

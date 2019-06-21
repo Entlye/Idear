@@ -1,0 +1,100 @@
+/* 添加目标css样式 */
+#target_define_style{
+    background-color: #f2f2f2;
+}
+.target-define-header{
+    position: relative;
+    font-size: 24px;
+    height: 60px;
+    line-height: 54px;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+}
+.target-define-header span {
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    font-weight: bold;
+}
+.save{
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 10%; 
+    font-weight: bold;
+    font-size: 17px;
+}
+.edit{
+    height: 80px;
+    border-bottom: 1px solid;
+    border-color: #f2f2f2;
+    background-color: #fff;
+}
+.edit img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 9.5%;
+    left: 10%;
+}
+.edit input{
+    font-family: 楷体;
+    width: 60%;
+    border: 0;
+    color: gray;
+    font-size: 16px;
+    position: absolute;
+    top: 11.5%;
+    right: 12%;
+}
+.set{
+    height: 135px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #f2f2f2;
+    background-color: #fff;
+}
+.time{
+    float: left;
+    width: 50%;
+    height: 133px;
+    border-right: 1px solid;
+    border-color: #f2f2f2;
+}
+.start{
+    position: absolute;
+    top: 26%;
+    left: 18%;
+}
+.end{
+    position: absolute;
+    top: 26%;
+    right:18%;
+}
+.encourage{
+    height: 140px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #f2f2f2;
+    background-color: #fff;
+}
+.encourage img{
+    width: 30px;
+    position: absolute;
+    top: 43%;
+    left: 8%;
+}
+.encourage span{
+    position: absolute;
+    top: 44%;
+    left: 18%;
+    font-size: 15px;
+}
+.encourage input{
+    position: absolute;
+    top: 49%;
+    left: 8%;
+    font-family: 楷体;
+    width: 100%;
+    font-size: 16px;
+}
