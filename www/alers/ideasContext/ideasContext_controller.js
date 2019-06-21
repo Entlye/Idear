@@ -14,13 +14,9 @@ angular.module('ideasContext.controller', ['ideasContext.service'])
 
         })
 
-        /*    setTimeout(function () {
-           }, 100) */
-
         // 强制刷新图片
         $scope.param = (new Date()).valueOf();
    
-
     // 点赞的js
 
     $('body').on("click", '.heart', function () {

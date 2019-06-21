@@ -38,15 +38,18 @@
 }
 
 #home-content {
-  position:absolute;
+  position: absolute;
   top: 90px;
 }
+
 .myOrderList.slider-slide {
-  left: 0!important;
+  left: 0 !important;
 }
+
 .myOrderList {
   height: 100%;
 }
+
 .scroll-content {
   height: 100%;
 }
@@ -78,9 +81,16 @@
 
 #home .headerBar-search span {
   color: rgba(151, 151, 151, 1);
+
   font-size: 18px;
+
   line-height: 25px;
-  margin-left: 10px;
+
+  margin-left: 11px;
+
+  margin-top: 2px;
+
+  position: absolute;
 }
 
 #home .headerBar-search div {
@@ -100,7 +110,8 @@
   width: 100%;
   vertical-align: middle;
   color: rgb(151, 151, 151);
-  margin-top: -6px;
+  margin-top: -1px !important;
+  margin-left: 12px !important;
   text-align: center;
 }
 
@@ -143,6 +154,7 @@
   display: inline-block;
   /* padding: 0 13px; */
 }
+
 .find_nav_list ul li :not(:last-child) {
   margin-left: 5px;
 }
@@ -160,6 +172,7 @@
 .find_nav_cur a {
   color: #e05d27 !important;
 }
+
 /* .nav-tab {
   position: absolute;
   top: 45px;
@@ -183,7 +196,7 @@
   position: absolute;
   border: 0;
   height: 2px;
-  background-color:#e05d27;
+  background-color: #e05d27;
   left: 0;
   top: 36px;
   pointer-events: none;
@@ -284,8 +297,9 @@
   margin-top: 20px;
   border-radius: 8px;
 }
+
 .ideas-card-img {
-  width: 323px;
+  width: 100%;
   height: 168px;
   margin-top: 20px;
   border-radius: 8px;
@@ -348,15 +362,17 @@
   border: none;
 }
 
-.home-content>div{
+.home-content>div {
   display: inline-block;
   width: 25%;
   float: left;
 }
+
 .img-active2 {
-  float:left;
+  float: left;
   width: 49%
 }
+
 .img-active {
   width: 100%;
 }
