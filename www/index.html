@@ -1,113 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
 
-    <!-- <link rel="manifest" href="manifest.json"> -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
 
-    <!-- 第三方CSS文件 -->
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="lib/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+  <!-- <link rel="manifest" href="manifest.json"> -->
 
-    <!-- 自定义CSS文件 -->
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/guidePage/guidePage.css">
-    <link rel="stylesheet" href="./css/home/home.css">
-    <link rel="stylesheet" href="./css/tab/tab.css">
-    <link rel="stylesheet" href="./lib/icomoon/style.css">
-    <link rel="stylesheet" href="./css/target/target.css">
-    <link rel="stylesheet" href="./css/target/target_add.css">
-    <link rel="stylesheet" href="./css/target/target_define.css">
-    <link rel="stylesheet" href="./css/account/account.css">
-    <link rel="stylesheet" href="./css/context/context.css">
-    <link rel="stylesheet" href="./css/account/account_register.css">
-    <link rel="stylesheet" href="./css/club/club.css">
-    <link rel="stylesheet" href="./css/club_detail/club_detail.css">
-    <!-- 控制app上传图片的css  -->
-    <link rel="stylesheet" href="./css/publish/publish.css">
-    
-    <!-- 第三方JS文件 -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="./lib/jquery/dist/jquery.min.js"></script>
+  <!-- 第三方CSS文件 -->
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="lib/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
 
-    <!-- 在开发阶段会报404错误 -->
-    <!-- <script src="cordova.js"></script> -->
+  <!-- 自定义CSS文件 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/guidePage/guidePage.css">
+  <link rel="stylesheet" href="./css/home/home.css">
+  <link rel="stylesheet" href="./css/tab/tab.css">
+  <link rel="stylesheet" href="./lib/icomoon/style.css">
+  <link rel="stylesheet" href="./css/target/target.css">
+  <link rel="stylesheet" href="./css/target/target_add.css">
+  <link rel="stylesheet" href="./css/target/target_define.css">
+  <link rel="stylesheet" href="./css/account/account.css">
+  <link rel="stylesheet" href="./css/context/context.css">
+  <link rel="stylesheet" href="./css/account/account_register.css">
+  <link rel="stylesheet" href="./css/club/club.css">
+  <link rel="stylesheet" href="./css/club_detail/club_detail.css">
 
-    <!-- 项目的全局JS文件 -->
-    <script src="js/app.js"></script>
-    <script src="js/route.js"></script>
-    <script src="js/config.js"></script>
-    <!-- 控制app上传图片的js -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/m.js"></script>
 
-    <!-- 各模块JS文件 -->
-      <!-- 引导页的JS文件 -->
-    <script src="./alers/guidePage/guidePage_controller.js"></script>
-    <script src="./alers/guidePage/guidePage_route.js"></script>
-    <script src="./alers/guidePage/guidePage_service.js"></script>
-      <!-- 导航页的JS文件 -->
-    <script src="./alers/tab/tab_controller.js"></script>
-    <script src="./alers/tab/tab_route.js"></script>
-    <script src="./alers/tab/tab_service.js"></script>
-      <!-- 首页的JS文件 -->
-    <script src="./alers/home/home_controller.js"></script>
-    <script src="./alers/home/home_route.js"></script>
-    <script src="./alers/home/home_service.js"></script>
-      <!-- 详情页的JS文件 -->
-    <script src="./alers/context/context_controller.js"></script>
-    <script src="./alers/context/context_route.js"></script>
-    <script src="./alers/context/context_service.js"></script>
-      <!-- ideas详情页的JS文件 -->
-    <script src="./alers/ideasContext/ideasContext_controller.js"></script>
-    <script src="./alers/ideasContext/ideasContext_route.js"></script>
-    <script src="./alers/ideasContext/ideasContext_service.js"></script>
-      <!-- 发布页的JS文件 -->
-    <script src="./alers/publish/publish_controller.js"></script>
-    <script src="./alers/publish/publish_route.js"></script>
-    <script src="./alers/publish/publish_service.js"></script>
-      <!-- 发布点子页的JS文件 -->
-    <script src="./alers/publishIdeas/publishIdeas_controller.js"></script>
-    <script src="./alers/publishIdeas/publishIdeas_route.js"></script>
-    <script src="./alers/publishIdeas/publishIdeas_service.js"></script>
-      <!-- 目标页的JS文件 -->
-    <script src="./alers/target/target_controller.js"></script>
-    <script src="./alers/target/target_route.js"></script>
-    <script src="./alers/target/target_service.js"></script>
-      <!-- 添加目标页的JS文件 -->
-    <script src="./alers/target_add/target_add_controller.js"></script>
-    <script src="./alers/target_add/target_add_route.js"></script>
-    <script src="./alers/target_add/target_add_service.js"></script>
-      <!-- 自定义目标页的JS文件 -->
-    <script src="./alers/target_define/target_define_controller.js"></script>
-    <script src="./alers/target_define/target_define_route.js"></script>
-    <script src="./alers/target_define/target_define_service.js"></script>
-     <!-- 我的页的JS文件 -->
-    <script src="./alers/account/accoint_controller.js"></script>
-    <script src="./alers/account/account_route.js"></script>
-    <script src="./alers/account/account_service.js"></script>
-    <!-- 注册页的JS文件 -->
-    <script src="./alers/account_register/account_register_controller.js"></script>
-    <script src="./alers/account_register/account_register_route.js"></script>
-    <script src="./alers/account_register/account_register_service.js"></script>
-     <!-- 社团页的JS文件 -->
-    <script src="./alers/club/club_controller.js"></script>
-    <script src="./alers/club/club_route.js"></script>
-    <script src="./alers/club/club_service.js"></script>
-     <!-- 社团详情页的JS文件 -->
-    <script src="./alers/club_detail/club_detail_controller.js"></script>
-    <script src="./alers/club_detail/club_detail_route.js"></script>
-    <script src="./alers/club_detail/club_detail_service.js"></script>
+  <!-- 控制app上传图片的css  -->
+  <link rel="stylesheet" href="./css/publish/publish.css">
 
-    <style>
-       body{
-        font-family: '楷体' !important;
-       }
-    </style>
-  </head>
-  <body ng-app="starter">
-    <ion-nav-view></ion-nav-view>
-  </body>
+  <!-- 第三方JS文件 -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="./lib/jquery/dist/jquery.min.js"></script>
+
+  <!-- 在开发阶段会报404错误 -->
+  <!-- <script src="cordova.js"></script> -->
+
+  <!-- 项目的全局JS文件 -->
+  <script src="js/app.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/config.js"></script>
+  <!-- 控制app上传图片的js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/m.js"></script>
+
+  <!-- 各模块JS文件 -->
+  
+  <!-- 引导页的JS文件 -->
+  <script src="./alers/guidePage/guidePage_controller.js"></script>
+  <script src="./alers/guidePage/guidePage_route.js"></script>
+  <script src="./alers/guidePage/guidePage_service.js"></script>
+  <!-- 导航页的JS文件 -->
+  <script src="./alers/tab/tab_controller.js"></script>
+  <script src="./alers/tab/tab_route.js"></script>
+  <script src="./alers/tab/tab_service.js"></script>
+  <!-- 首页的JS文件 -->
+  <script src="./alers/home/home_controller.js"></script>
+  <script src="./alers/home/home_route.js"></script>
+  <script src="./alers/home/home_service.js"></script>
+  <!-- 详情页的JS文件 -->
+  <script src="./alers/context/context_controller.js"></script>
+  <script src="./alers/context/context_route.js"></script>
+  <script src="./alers/context/context_service.js"></script>
+  <!-- ideas详情页的JS文件 -->
+  <script src="./alers/ideasContext/ideasContext_controller.js"></script>
+  <script src="./alers/ideasContext/ideasContext_route.js"></script>
+  <script src="./alers/ideasContext/ideasContext_service.js"></script>
+  <!-- 发布页的JS文件 -->
+  <script src="./alers/publish/publish_controller.js"></script>
+  <script src="./alers/publish/publish_route.js"></script>
+  <script src="./alers/publish/publish_service.js"></script>
+  <!-- 发布点子页的JS文件 -->
+  <script src="./alers/publishIdeas/publishIdeas_controller.js"></script>
+  <script src="./alers/publishIdeas/publishIdeas_route.js"></script>
+  <script src="./alers/publishIdeas/publishIdeas_service.js"></script>
+  <!-- 目标页的JS文件 -->
+  <script src="./alers/target/target_controller.js"></script>
+  <script src="./alers/target/target_route.js"></script>
+  <script src="./alers/target/target_service.js"></script>
+  <!-- 添加目标页的JS文件 -->
+  <script src="./alers/target_add/target_add_controller.js"></script>
+  <script src="./alers/target_add/target_add_route.js"></script>
+  <script src="./alers/target_add/target_add_service.js"></script>
+  <!-- 自定义目标页的JS文件 -->
+  <script src="./alers/target_define/target_define_controller.js"></script>
+  <script src="./alers/target_define/target_define_route.js"></script>
+  <script src="./alers/target_define/target_define_service.js"></script>
+  <!-- 我的页的JS文件 -->
+  <script src="./alers/account/accoint_controller.js"></script>
+  <script src="./alers/account/account_route.js"></script>
+  <script src="./alers/account/account_service.js"></script>
+  <!-- 注册页的JS文件 -->
+  <script src="./alers/account_register/account_register_controller.js"></script>
+  <script src="./alers/account_register/account_register_route.js"></script>
+  <script src="./alers/account_register/account_register_service.js"></script>
+  <!-- 社团页的JS文件 -->
+  <script src="./alers/club/club_controller.js"></script>
+  <script src="./alers/club/club_route.js"></script>
+  <script src="./alers/club/club_service.js"></script>
+  <!-- 社团详情页的JS文件 -->
+  <script src="./alers/club_detail/club_detail_controller.js"></script>
+  <script src="./alers/club_detail/club_detail_route.js"></script>
+  <script src="./alers/club_detail/club_detail_service.js"></script>
+
+  <style>
+    body {
+      font-family: '楷体' !important;
+    }
+  </style>
+</head>
+
+<body ng-app="starter">
+  <ion-nav-view></ion-nav-view>
+</body>
+
 </html>
